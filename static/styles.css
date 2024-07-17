@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    text-align: center;
+    background-color: #fff; /* White background */
+    padding: 50px; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 500px; /* Increased width */
+    max-width: 90%; /* Maximum width to maintain responsiveness */
+}
+
+h1 {
+    font-size: 28px; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #ce2129; /* Blue color for the heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Arrange form elements in a column */
+    align-items: center;
+}
+
+
+label {
+    font-size: 18px; /* Increased font size for labels */
+    margin-bottom: 10px; /* Space below each label */
+    color: #333; /* Darker color for label text */
+}
+
+input[type="text"] {
+    width: 100%; /* Full width input */
+    padding: 12px; /* Increased padding */
+    margin-bottom: 20px; /* Space below input */
+    font-size: 18px; /* Increased font size for input text */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+button[type="submit"] {
+    padding: 14px 28px; /* Increased padding inside button */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Increased font size for button text */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+}

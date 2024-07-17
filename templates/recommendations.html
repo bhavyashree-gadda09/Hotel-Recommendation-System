@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Recommendations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Slab', serif;
+            background-image: url('/static/hotel.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            color: #4d3ce7;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hotel-name {
+            display: block; /* Ensure it appears on a new line */
+            color: #4b2a04; /* Red color for hotel name */
+            font-weight: bold; /* Bold font weight */
+            margin-bottom: 10px; /* Add some space below */
+        }
+        .hotel-box {
+            background-color: #f9f9f9; /* Light gray background */
+            border: 1px solid #ddd; /* Gray border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px; /* Padding inside the box */
+            margin-bottom: 10px; /* Space between boxes */
+            text-align: center; /* Align text to the left */
+        }
+        a {
+            font-family: 'Roboto Slab', serif;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e65f5f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #af1a23;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recommended Hotels for <span class="hotel-name">{{ hotel_name }}</span></h1>
+        {% for hotel in recommendations %}
+        <div class="hotel-box">
+            {{ hotel }}
+        </div>
+        {% endfor %}
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
